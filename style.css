@@ -49,20 +49,37 @@ body{
     justify-content: center;
     flex-direction: column;
     transform: scale(0.8);  
+   
     animation: grow 0.8s ease-in-out forwards;
 
 }
+input:hover{
 
+
+    background: transparent;
+    outline: none; /* Opcional: remove a borda de foco */
+    box-shadow: none; /* Opcional: remove qualquer sombra aplicada */
+    
+    color: grey;
+}
 input{
-    box-shadow: inset 3px 3px 2px rgba(0, 0, 0, 0.6);
+   
     display: flex;
     border:none;
+    border-bottom:1px solid grey;
     border-radius: 3px;
     height: 20px;;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(167, 115, 115, 0.274);
+    transition: 0.8s;
     
     
+}
+input:focus {
+    background: transparent;
+    outline: none; /* Opcional: remove a borda de foco */
+    box-shadow: none; /* Opcional: remove qualquer sombra aplicada */
     
+    color: grey;
 }
 input::placeholder {
     text-align: center;
@@ -104,14 +121,14 @@ button{
 }
 
 .textoA{
-    
+    gap:15px;
     font-weight: 600;
     margin-top: 10px;
-    
+    font-size: 14px;
     display:flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 /* .loginIMG:hover{
@@ -119,7 +136,7 @@ button{
     transform: scale(1.2);
 } */
  a:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     
 
 }
@@ -144,7 +161,7 @@ body::before {
     flex-direction: column;
 }
 .textoC{
-    font-weight: 600;
+    font-weight: bold;
     margin-top: 10px;
     gap: 5px;
     display:flex;
