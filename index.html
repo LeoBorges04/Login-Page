@@ -11,41 +11,33 @@
 <body>
     
     <form>
-    <div class="container">
-
-
-        <div class="loginIMG">
-            
-            <div class="userIMG">
-
-                <img id="img1" src="./image/user-solid.svg" alt="loginIMG" width="200px" height="200px" style=" border-radius: 50%;">
+        <div class="container">
+            <div class="loginIMG">
+                <div class="userIMG">
+                    <img id="img" src="./image/user-solid.svg" alt="loginIMG" width="200px" height="200px" style="border-radius: 50%;">
+                </div>
+    
+                <div class="input-group">
+                    <input type="email" id="usuario" placeholder="E-mail" required/>
+                    <input type="password" id="senha" placeholder="Senha" required/>
+                </div>
+    
+                <button type="submit" style="margin-top: 10px;">Entrar</button>
+                <a href="criarSenha.html">
+                    <p style="margin-top: 20px;">Esqueci minha senha</p>
+                </a>
+    
+                <div class="textoA">
+                    <p>Não tem uma conta? </p>
+                    <a href="cadastro.html">
+                        <p><strong>Faça seu cadastro</strong></p>
+                    </a>
+                </div>
             </div>
-            
-            <div class="input-group">
-                
-                <input type="email" id="usuario" placeholder="E-mail" required/>
-                
-                <input type="password" id="senha" placeholder="Senha" required/>
-                
-                
-            </div>
-            
-            
-            <button type="submit">Entrar</button>
-            
-            <p><a  href="#">Esqueci minha senha</a></p>
-            <div class="textoA">
-
-                <p id="p2"> Não tem uma conta? </p>
-                <a href="#"><strong>Faça seu cadastro</strong></a>
-            </div>
-            
         </div>
-    </div>
-
-   
-
-
+    
+    </form>
+    <script src="source.js"></script>
 </form>
 </body>
 </html>
