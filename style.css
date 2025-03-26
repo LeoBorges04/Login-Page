@@ -1,10 +1,9 @@
 body{
     background-image: url('./image/background.jpg');
+    
     background-size: cover; /* Faz a imagem cobrir toda a tela */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Evita repetição da imagem */
-    justify-content: center;
-    align-items: center;
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
@@ -29,6 +28,7 @@ body{
 }
 
  img{
+    
      box-shadow: inset 3px 5px 2px rgba(0, 0, 0, 0.6);
      transition: transform 0.6s ease-in-out;
      width: 100px;
@@ -36,6 +36,7 @@ body{
 
  }
 .loginIMG{
+   
     transition: 0.6s ease-in-out;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
     border-radius: 10%;
@@ -47,11 +48,11 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    transform: scale(0.8);  
+    animation: grow 0.8s ease-in-out forwards;
 
 }
-#p2{
-    font-size: 14px;
-}
+
 input{
     box-shadow: inset 3px 3px 2px rgba(0, 0, 0, 0.6);
     display: flex;
@@ -72,7 +73,9 @@ input::placeholder {
     gap:10px;
     margin-top: 10px;
     display: flex;
+    align-items: center;
     flex-direction: column;
+    justify-content: space-around;
     margin-bottom: 10px;
 }
 p{
@@ -84,7 +87,7 @@ a{
     transition: 0.4s;
     font-weight: bold;
     text-decoration: none;
-    color:#833AB4
+    color:#833AB4;
 }
 button{
 
@@ -101,16 +104,60 @@ button{
 }
 
 .textoA{
+    
+    font-weight: 600;
     margin-top: 10px;
-    gap: 5px;
+    
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
 }
 
-.loginIMG:hover{
+/* .loginIMG:hover{
 
     transform: scale(1.2);
+} */
+ a:hover{
+    transform: scale(1.2);
+    
+
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit; /* Pega a imagem de fundo */
+    filter: blur(10px); /* Aplica o blur */
+    z-index: -1; /* Mantém o fundo atrás de todo o conteúdo */
+}
+.textoB{
+    font-weight: 600;
+    margin-top: 10px;
+    gap: 5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.textoC{
+    font-weight: 600;
+    margin-top: 10px;
+    gap: 5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
+@keyframes grow {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
